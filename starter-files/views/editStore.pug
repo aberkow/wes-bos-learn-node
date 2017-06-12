@@ -6,8 +6,7 @@ include mixins/_storeForm
 block content
 
   div.inner
+    
     h2 #{title}
     //- this is the syntax for using the mixin.
-    +storeForm({
-      name: 'Starbucks'
-    }) 
+    +storeForm(store) 
